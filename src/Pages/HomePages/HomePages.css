@@ -1,0 +1,325 @@
+.homepage{
+    position: relative;
+}
+.carousel{
+    padding-top: 90px;
+    /* position: relative; */
+}
+/* card css */
+.card{
+    position: relative;
+}
+.card .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .card-imgs{
+        margin: 10px 0;
+        width: 310px;
+        height: 150px;
+    }
+/* card css */
+    
+/* menu css */
+.menu{
+    width: 100% !important;
+    position: relative;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8a2be2;
+}
+
+.menu .container , .menu-meal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu-meal{
+    width: 100%;
+    padding: 20px 10px 0px 10px ;
+    background-color: #8a2be2;
+}
+.meal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 40px;
+    transition: 0.3s ease;
+}
+.meal:hover{
+    background-color: white;
+}
+.meal:hover .menu-link{
+    color: #8a2be2;
+}
+/* .actives{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 40px;
+    background-color: white;
+    color: #8a2be2;
+} */
+/* menu css */
+
+/* foods css  */
+.foods{
+    position: relative;
+}
+.foods .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.foods-lists{
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.3);
+    cursor: pointer;
+    margin: 15px 4px;
+    height: 390px;
+    padding: 10px 15px 18px;
+    transition: .3s;
+    width: 290px
+}
+.foods-lists:hover{
+    transform: scale(.9);
+}
+.foods-img{
+    width: 230px;
+    height: 180px;
+}
+.foods-text{
+    color: #b6b2b2;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 10px 0;
+}
+.foods-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.foods-btn{
+    background-color: #8a2be2;
+    border: 2px solid #8a2be2;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 15px;
+    transition: 1s;
+}
+.foods-btn:hover{
+    color:#8a2be2 ;
+    background-color: white;
+    border-style:#8a2be2 ;
+}
+@media screen  and (max-width  : 900px) {
+    .carousel{
+        padding-top: 50px;
+        /* position: relative; */
+    }
+}
+@media screen and(max-width:747px) {
+    .carousel{
+        margin-bottom: 50px;
+        /* position: relative; */
+    }
+}
+@media screen and(max-width:567px) {
+      .carousel{
+        margin-top: 100px;
+    }
+}
+/* card media */
+@media screen  and (max-width :1280px) {
+  .card .container .card-imgs{
+            margin: 10px 0;
+            width: 290px;
+            height: 120px;
+        }
+}
+@media screen  and (max-width :1200px) {
+    .card .container .card-imgs{
+              margin: 10px 0;
+              width: 250px;
+              height: 120px;
+          }
+  }
+  @media screen  and (max-width :1038px) {
+    .card .container .card-imgs{
+              margin: 10px 0;
+              width: 200px;
+              height: 100px;
+          }
+  }
+  @media screen  and (max-width :834px) {
+    .card .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    .card .container .card-imgs{
+              margin: 10px 0;
+              width: 370px;
+              height: 200px;
+          }
+  }
+  @media screen  and (max-width :793px) {
+    .card .container .card-imgs{
+              margin: 10px 0;
+              width: 340px;
+              height: 180px;
+          }
+  }
+  @media screen  and (max-width :712px) {
+    .card .container .card-imgs{
+              margin: 10px 0;
+              width: 300px;
+              height: 150px;
+          }
+  }
+  @media screen  and (max-width :632px) {
+    .card .container{
+        display: block;
+    }
+.card .container .card-imgs{
+          margin: 10px 0;
+          width: 100%;
+          height: 170px;
+      }
+}
+/* card media */
+/* menu media */
+@media screen  and (max-width :884px) {
+     .menu-meal{
+       flex-wrap: wrap;
+    }
+    .meal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        padding: 10px 80px;
+        transition: 0.3s ease;
+    }
+    .menu-link{
+        text-decoration: none;
+    }
+    .meal:hover{
+        background-color: #8a2be2;
+    }
+    .meal:hover .menu-link{
+        color: #8a2be2;
+    }
+.actives{
+        display: inline-block;
+        align-items: center;
+        justify-content: center; 
+        height: 45px !important;
+        width: 300px !important;
+        color: #8a2be2;
+        border: 2px solid green !important;
+    }
+}
+/* meal media */
+
+/* foods media */
+@media screen  and (max-width :918px) {
+.foods{
+    position: relative;
+}
+.foods .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.foods-lists{
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.3);
+    cursor: pointer;
+    margin: 15px 4px;
+    height: 390px;
+    padding: 10px 15px 18px;
+    transition: .3s;
+    width: 350px !important;
+}
+.foods-img{
+    width: 300px !important;
+    height: 180px;
+}
+}
+@media screen  and (max-width :757px) {
+    .foods-lists{
+        width: 300px !important;
+    }
+    .foods-img{
+        width: 250px !important;
+        height: 180px;
+    }
+    }
+    @media screen  and (max-width :657px) {
+        .foods-lists{
+            height: 330px;
+            padding: 10px 15px 18px;
+            transition: .3s;
+            width: 250px !important;
+        }
+        .foods-img{
+            width: 210px !important;
+            height: 180px;
+        }
+        }
+        @media screen  and (max-width :660px) {
+            .foods .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .foods-lists{
+                width: 500px !important;
+            }
+            .foods-img{
+                width: 100% !important;
+            }
+            .foods-text{
+                font-size: 14px;
+                line-height: 18px;
+                padding: 0;
+            }
+            .foods-title{
+                padding: 5px 0;
+            }
+
+        }
+        @media screen  and (max-width :548px) {
+            .foods .container{
+                display: block;
+            }
+            .foods-lists{
+                width: 400px !important;
+            }
+            .foods-img{
+                width: 100% !important;
+            }
+            }
+    
+            @media screen  and (max-width :448px) {
+                .foods-lists{
+                    width: 300px !important;
+                }
+
+                }
+                @media screen  and (max-width :347px) {
+                    .foods-lists{
+                        width: 260px !important;
+                    }
+    
+                    }

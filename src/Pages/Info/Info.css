@@ -1,0 +1,43 @@
+.info-wrapper{
+    padding-top: 100px;
+    background-color: #f6f6f6; 
+    padding-bottom: 50px;
+
+}
+.info-wrapper .container{
+    padding: 10px 120px;
+    background-color: White;
+}
+.info-image{
+    width: 100%;
+}
+@media screen and (max-width: 750px){
+    .info-wrapper{
+        padding-top: 88px;
+        padding-bottom: 10px;
+    
+    }
+    .info-wrapper .container{
+        padding: 10px 20px;
+        background-color: White;
+    }
+    .info-image{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 460px){
+.info-title{
+    font-size: 16px;
+}
+.info-text{
+    font-size: 11px;
+}
+}
+@media screen and (max-width: 335px){
+    .info-title{
+        font-size: 14px;
+    }
+    .info-text{
+        font-size: 12px;
+    }
+    }

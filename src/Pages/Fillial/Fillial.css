@@ -1,0 +1,123 @@
+.fillial-wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #f6f6f6;
+   padding-top: 180px;
+   padding-bottom: 80px;
+}
+.fillial-list{
+    width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgb(0 0 0/7%);
+    cursor: pointer;
+    margin: 30px 0;
+    padding: 15px 40px;
+}
+.fillial-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.fillial-title{
+    color: black;
+}
+.fillial-text , .fillial-clock{
+    color: #000000;
+}
+.fillial-info{
+    color:#00000080;
+}
+@media screen and (max-width: 980px){
+     .fillial-list{
+         width: 800px;
+  margin: 0 auto;
+     }
+     .fillial-link{
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         text-decoration: none;
+     }
+}
+@media screen and (max-width: 884px){
+    .fillial-list{
+        width: 600px;
+    }
+    .fillial-link{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+    }
+}
+@media screen and (max-width: 700px){
+    .fillial-wrapper{
+        padding-top: 90px;
+        padding-bottom: 30px;
+     }
+     .fillial-list{
+         width: 470px;
+         margin: 10px 0;
+         padding: 15px 20px;
+     }
+     .fillial-title{
+         font-size: 22px;
+     }
+}
+@media screen and (max-width: 570px){
+    .fillial-wrapper{
+        padding-top: 70px;
+        padding-bottom: 5px;
+     }
+     .fillial-list{
+         width: 350px;
+     }
+     .fillial-title{
+         font-size: 20px;
+     }
+     .fillial-text , .fillial-clock{
+        color: #000000;
+        font-size: 16px;
+    }
+    .fillial-info{
+        color:#00000080;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 425px){
+     .fillial-list{
+         width: 300px;
+     }
+     .fillial-title{
+         font-size: 20px;
+     }
+     .fillial-text , .fillial-clock{
+        color: #000000;
+        font-size: 16px;
+    }
+    .fillial-info{
+        font-size: 14px !important;
+    }
+}
+@media screen and (max-width: 400px){
+    .fillial-wrapper{
+        padding-top: 50px;
+        padding-bottom: 0px;
+     }
+     .fillial-list{
+         width: 240px;
+         margin: 10px 0;
+         padding: 15px;
+     }
+     .fillial-link{
+         display: block;
+     }
+}
+@media screen and (max-width: 330px){
+     .fillial-list{
+         width: 200px;
+     }
+
+}

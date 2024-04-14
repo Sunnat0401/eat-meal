@@ -1,0 +1,125 @@
+.desert{
+    position: relative;
+}
+.carousel {
+    padding-top: 90px;
+    position: relative;
+}
+/* card css */
+.card{
+    position: relative;
+}
+.card .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .card-imgs{
+        margin: 10px 0;
+        width: 310px;
+        height: 150px;
+    }
+/* card css */
+    
+/* menu css */
+.menu{
+    width: 100% !important;
+    position: relative;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8a2be2;
+}
+
+.menu .container , .menu-meal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu-meal{
+    width: 100%;
+    padding: 20px 10px 0px 10px ;
+    background-color: #8a2be2;
+}
+.meal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 40px;
+    transition: 0.3s ease;
+}
+.menu-link{
+    text-decoration: none;
+   color: white;
+}
+.meal:hover{
+    background-color: white;
+}
+.meal:hover .menu-link{
+    color: #8a2be2;
+}
+.actives{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 40px;
+    background-color: white;
+    color: #8a2be2;
+}
+/* menu css */
+
+/* foods css  */
+.foods{
+    position: relative;
+}
+.foods .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.foods-lists{
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.3);
+    cursor: pointer;
+    margin: 15px 4px;
+    height: 390px;
+    padding: 10px 15px 18px;
+    transition: .3s;
+    width: 290px
+}
+.foods-lists:hover{
+    transform: scale(.9);
+}
+.foods-img{
+    width: 230px;
+    height: 180px;
+}
+.foods-text{
+    color: #b6b2b2;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 10px 0;
+}
+.foods-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.foods-btn{
+    background-color: #8a2be2;
+    border: 2px solid #8a2be2;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 15px;
+    transition: 1s;
+}
+.foods-btn:hover{
+    color:#8a2be2 ;
+    background-color: white;
+    border-style:#8a2be2 ;
+}
