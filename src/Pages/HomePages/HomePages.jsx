@@ -14,6 +14,7 @@ import foods8 from '../../assets/foods8.png'
 import foods9 from '../../assets/foods9.png'
 import {Link} from 'react-router-dom'
 import './HomePages.css'
+import '../../index.css'
 import Footer from '../../Components/Footer/Footer'
 const HomePages = () => {
   return (
@@ -107,7 +108,7 @@ const HomePages = () => {
              <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
              <div className="foods-info">
               <span className="foods-sum">5.29 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <button className="foods-btn"><a href="#">Заказать</a></button>
              </div>
       </div>
       <div className="foods-lists">
