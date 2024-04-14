@@ -39,7 +39,6 @@
     justify-content: space-around;
 }
 .menu-meal{
-    width: 100%;
     padding: 20px 10px 0px 10px ;
     background-color: #8a2be2;
 }
@@ -56,16 +55,18 @@
 }
 .meal:hover .menu-link{
     color: #8a2be2;
-}
-/* .actives{
+    }
+.actives{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 40px;
+    width: 40px;
     background-color: white;
     color: #8a2be2;
-} */
+}
+.actives .menu-link{
+    color: #8a2be2;
+}
 /* menu css */
 
 /* foods css  */
@@ -122,18 +123,16 @@
 @media screen  and (max-width  : 900px) {
     .carousel{
         padding-top: 50px;
-        /* position: relative; */
     }
 }
 @media screen and(max-width:747px) {
     .carousel{
         margin-bottom: 50px;
-        /* position: relative; */
     }
 }
 @media screen and(max-width:567px) {
       .carousel{
-        margin-top: 100px;
+        padding-top: 100px;
     }
 }
 /* card media */
@@ -220,11 +219,13 @@
 .actives{
         display: inline-block;
         align-items: center;
+        color: #8a2be2;
         justify-content: center; 
         height: 45px !important;
-        width: 300px !important;
+        width: 100px !important;
+    }
+    .actives .menu-link{
         color: #8a2be2;
-        border: 2px solid green !important;
     }
 }
 /* meal media */

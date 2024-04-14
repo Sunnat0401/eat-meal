@@ -60,7 +60,7 @@ const HomePages = () => {
         <div className="wrapper">
         <div className="container">
           <ul className="menu-meal">
-          <li className="meal"><Link to="/" className="menu-link actives ">Lavash</Link></li>
+          <li className="meal actives"><Link to="/" className="menu-link  ">Lavash</Link></li>
             <li className="meal"><Link to="/desert" className="menu-link ">Desert</Link></li>
             <li className="meal"><Link to="/set" className="menu-link ">Set</Link></li>
             <li className="meal"><Link to="/haggi" className="menu-link">Xaggi</Link></li>

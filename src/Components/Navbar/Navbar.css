@@ -98,7 +98,6 @@
     .navbar-item .navbar-link{
         padding: 10px ;
     }
-    /* navbar-right css */
     .navbar-btn {
         width: 50px;
         height: 40px;
@@ -115,7 +114,6 @@
     .navbar-item .navbar-link{
         padding: 10px ;
     }
-    /* navbar-right css */
     .navbar-btn {
         width: 40px;
         height: 40px;
@@ -159,7 +157,6 @@
         
     }
     .navbar-item{
-        /* padding:  0 35px; */
     }
     .navbar-item .navbar-link{
         font-size: 18px;
@@ -196,6 +193,9 @@
     .navbar-left{
         display: none;
     }
+    .navbar-right{
+        margin: 15px;
+    }
     .navbar-btn {
         width: 20px;
         margin: 0 20px;
@@ -203,4 +203,4 @@
     .navbar-icon i{
       font-size: 16px;
     }
-}
+}`

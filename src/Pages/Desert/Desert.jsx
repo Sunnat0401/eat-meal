@@ -61,7 +61,7 @@ const HomePages = () => {
         <div className="container">
           <ul className="menu-meal">
             <li className="meal"><Link to="/" className="menu-link ">Lavash</Link></li>
-            <li className="meal"><Link to="/desert" className="menu-link actives">Desert</Link></li>
+            <li className="meal actives"><Link to="/desert" className="menu-link ">Desert</Link></li>
             <li className="meal"><Link to="/set" className="menu-link">Set</Link></li>
             <li className="meal"><a href="#" className="menu-link">Xaggi</a></li>
             <li className="meal"><a href="#" className="menu-link">Burger</a></li>

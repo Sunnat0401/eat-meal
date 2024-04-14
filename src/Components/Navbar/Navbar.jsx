@@ -26,10 +26,10 @@ const Navbar = () => {
             </ul>
             <div className="navbar-right">
                 <button className="navbar-btn navbar-icons">
-                    <a href="#" className="navbar-icon"><i className="fa-solid fa-cart-shopping"></i></a>
+                    <Link to="/" className="navbar-icon"><i className="fa-solid fa-cart-shopping"></i></Link>
                 </button>
                 <button className="navbar-btn">
-                    <a href="#" className="navbar-sublink">Войти</a>
+                    <Link to="/" className="navbar-sublink">Войти</Link>
                 </button>
             </div>
         </div>

@@ -62,7 +62,7 @@ const Haggi = () => {
           <li className="meal"><Link to="/" className="menu-link ">Lavash</Link></li>
             <li className="meal"><Link to="/desert" className="menu-link ">Desert</Link></li>
             <li className="meal"><Link to="/set" className="menu-link ">Set</Link></li>
-            <li className="meal"><Link to="/haggi" className="menu-link actives">Xaggi</Link></li>
+            <li className="meal actives"><Link to="/haggi" className="menu-link ">Xaggi</Link></li>
             <li className="meal"><Link to="/burger" className="menu-link">Burger</Link></li>
             <li className="meal"><Link to="/pizza" className="menu-link">Pizza</Link></li>
             <li className="meal"><Link to="/sendwich" className="menu-link">Sendvich</Link></li>

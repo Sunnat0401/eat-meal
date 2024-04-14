@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-bottom">
                     <p className="footer-adress">© 2020–2022, ООО «IT-TIME», официальный сайт</p>
-                    <a href="https://t.me/Sunnat_04_01" className="dev-link">Developed by Sunnatjon</a>
+                    <a href="https://t.me/Sunnat_04_01" className="dev-link">Developer by Sunnatjon</a>
                 </div>
         </div>
     </div>
