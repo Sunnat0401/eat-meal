@@ -68,7 +68,7 @@
 }
 @media screen and (max-width: 570px){
     .fillial-wrapper{
-        padding-top: 70px;
+        padding-top: 100px;
         padding-bottom: 5px;
      }
      .fillial-list{
@@ -103,7 +103,7 @@
 }
 @media screen and (max-width: 400px){
     .fillial-wrapper{
-        padding-top: 50px;
+        padding-top: 120px;
         padding-bottom: 0px;
      }
      .fillial-list{
