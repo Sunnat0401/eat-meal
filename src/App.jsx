@@ -18,6 +18,7 @@ import Drink from './Pages/Drink/Drink';
 import Salad from './Pages/Salad/Salad';
 import Bread from './Pages/Bread/Bread';
 import Sauce from './Pages/Sauce/Sauce';
+import Connect from './Pages/Connect/Connect'
 const App = () => {
   return (
     <div>
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/salad" element={<Salad/>}/>
         <Route path="/bread" element={<Bread/>}/>
         <Route path="/sauce" element={<Sauce/>}/>
+        <Route path="/connect" element={<Connect/>}/>
         
       </Routes>
 

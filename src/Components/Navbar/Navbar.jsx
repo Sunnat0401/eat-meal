@@ -1,12 +1,15 @@
+import TemporaryDrawer from '../../Pages/Hamburger/Hamburger';
 import './Navbar.css'
-import hamburger  from '../../assets/hamicon.jpg'
+
 import {Link} from "react-router-dom";
 const Navbar = () => {
   return (
 <div className="navbar-wrap">
 <div className="navbar">
         <div className="container">
-            <img className='hamburger' src={hamburger} alt="iconka" />
+            <div className="hamburger">
+            <TemporaryDrawer/>
+            </div>
             <ul className="navbar-left">
                 <li className="navbar-item logo">
                     <Link to="/" className="navbar-link logo">SFood</Link>
@@ -26,10 +29,10 @@ const Navbar = () => {
             </ul>
             <div className="navbar-right">
                 <button className="navbar-btn navbar-icons">
-                    <Link to="/" className="navbar-icon"><i className="fa-solid fa-cart-shopping"></i></Link>
+                    <Link to="" className="navbar-icon"><i className="fa-solid fa-cart-shopping"></i></Link>
                 </button>
                 <button className="navbar-btn">
-                    <Link to="/" className="navbar-sublink">Войти</Link>
+                    <Link to="/connect" className="navbar-sublink">Войти</Link>
                 </button>
             </div>
         </div>
