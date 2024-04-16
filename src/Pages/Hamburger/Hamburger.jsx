@@ -25,7 +25,7 @@ export default function TemporaryDrawer() {
             <li  onClick={onCloseD} className="hamburger-list"><Link className="hamburger-link"to="/fillial">Филиалы</Link></li>
             <li   onClick={onCloseD} className="hamburger-list"><Link className="hamburger-link" to="/info">О нас</Link></li>
             <li  onClick={onCloseD} className="hamburger-list"><Link className="hamburger-link"to="/contact">Контакты</Link></li>
-            <li  onClick={onCloseD} className="hamburger-list"><Link className="hamburger-link" to="+">Войти</Link></li>
+            <li  onClick={onCloseD} className="hamburger-list"><Link className="hamburger-link" to="/connect">Войти</Link></li>
            </ul>
 
       </List>
