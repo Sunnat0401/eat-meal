@@ -16,33 +16,15 @@ import {Link} from 'react-router-dom'
 import './HomePages.css'
 import '../../index.css'
 import Footer from '../../Components/Footer/Footer'
+import MyCarousel from '../../Components/Carousel/Carousel'
+
 const HomePages = () => {
   return (
     <div className="homepage">
      <Navbar/>   
 
-     {/* Carusel */}
-     <div id="carouselExampleControlsNoTouching" className="carousel slide " data-bs-touch="false">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src={corusel1} className="d-block w-100" alt="..." />
-    </div>
-    <div className="carousel-item">
-      <img src={corusel2} className="d-block w-100" alt="..." />
-    </div>
-    <div className="carousel-item">
-      <img src={corusel3} className="d-block w-100" alt="..." />
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
+     {/* Carusel */}/
+<MyCarousel/>
 {/* Carusell */}
 
    {/* Cards */}

@@ -72,7 +72,9 @@
 }
 .navbar-btn:hover .navbar-sublink{
     color: #fff;
-
+}
+.navbar-btn.active .navbar-sublink{
+    color: #fff;
 }
 .navbar-btn:hover .navbar-icon{
     transform: translate(1.1);

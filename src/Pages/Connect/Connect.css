@@ -28,6 +28,13 @@
     background-color: #96B1C2;
     color: #fff;
 }
+ .navbar-btn .active{
+        background-color: #8a2be2;
+        color: white !important;
+}
+.navbar-btn .active .navbar-sublink{
+    color: #fff!important;
+}
 @media screen and (max-width:565px){
     .connect-group{
         padding: 50px 0 0 20px;

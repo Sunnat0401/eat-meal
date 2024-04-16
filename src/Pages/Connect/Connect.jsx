@@ -1,11 +1,46 @@
 import './Connect.css'
 import qrcode from '../../assets/qr.png'
-import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer'
+import TemporaryDrawer from '../Hamburger/Hamburger'
+import { Link } from 'react-router-dom'
+import '../../Components/Navbar/Navbar.css'
 const Connect = () => {
   return (
     <div className="connect">
-        <Navbar/>
+                             <div className="navbar-wrap">
+<div className="navbar">
+        <div className="container">
+            <div className="hamburger">
+            <TemporaryDrawer/>
+            </div>
+            <ul className="navbar-left">
+                <li className="navbar-item logo">
+                    <Link to="/" className="navbar-link logo">SFood</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/" className="navbar-link ">Главная</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/fillial" className="navbar-link ">Филиалы </Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/info" className="navbar-link ">О нас</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/contact" className="navbar-link ">Контакты</Link>
+                </li>
+            </ul>
+            <div className="navbar-right">
+                <button className="navbar-btn navbar-icons">
+                    <Link to="" className="navbar-icon"><i className="fa-solid fa-cart-shopping"></i></Link>
+                </button>
+                <button className="navbar-btn active">
+                    <Link to="/connect" className="navbar-sublink ">Войти</Link>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
         <div className="container">
             <div className="connect-group">
             <h1 className="connect-title">Войти</h1>
