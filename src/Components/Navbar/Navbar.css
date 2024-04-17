@@ -23,8 +23,8 @@
     
 }
 .navbar-right{
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .navbar-item{
@@ -37,7 +37,13 @@
     transition: .3s;
     text-decoration: none;
     color: #8a2be2;
-
+}
+.navbar-select{
+    width: 100px;
+    height: 30px;
+    padding: 4px;
+    border-radius: 5px;
+  color: #8a2be2;
 }
 .navbar-link:hover{
     background-color: #8a2be2;
@@ -55,15 +61,19 @@
 }
 /* navbar-right css */
 .navbar-btn {
-    width: 100px;
+    display: block;
+    width: 100px !important;
+    border: none;
+    border-radius: 5px ;
     height: 40px;
     margin: 0 30px;
-    border: none;
+    /* border: none; */
     background-color: transparent;
     transition: 0.3s ease;
 }
 .navbar-btn:hover{
     background-color: #8a2be2;
+    
 }
 .navbar-sublink{
     text-decoration: none;
@@ -125,6 +135,16 @@
     .navbar-icon i{
       font-size: 20px;
     }
+    .navbar-right{
+       padding-bottom: 10px;
+    }
+    .navbar-select{
+        width: 70px;
+        height: 30px;
+        padding: 2px;
+        border-radius: 5px;
+      color: #8a2be2;
+    }
 }
 @media screen  and (max-width :738px) {
     .navbar-item{
@@ -141,26 +161,24 @@
     .navbar-icon i{
       font-size: 18px;
     }
+ 
 }
 @media screen  and (max-width :660px) {
     .navbar-item{
         padding:  0 3px;
     }
-    .navbar-item .navbar-link{
-        line-height: 10px;
-    }
     .navbar-btn {
         width: 45px;
         margin: 0 1px;
     }
-    .navbar-left{
-        /* padding:  10px; */
-        
-    }
-    .navbar-item{
+    .navbar-select{
+        width: 70px;
+        height: 30px;
+        padding: 1px;
+        margin-right: 4px;
     }
     .navbar-item .navbar-link{
-        font-size: 18px;
+        font-size: 16px;
         line-height: 5px;
         padding: 5px ;
     }

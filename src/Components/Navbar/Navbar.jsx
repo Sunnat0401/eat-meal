@@ -1,8 +1,12 @@
+import { useTranslation } from 'react-i18next';
 import TemporaryDrawer from '../../Pages/Hamburger/Hamburger';
 import './Navbar.css'
-
 import {Link} from "react-router-dom";
-const Navbar = () => {
+const Navbar = ({changeLang}) => {
+    const changeLangHandler = (e) =>{
+       changeLang(e.target.value)
+    }
+    const {t} = useTranslation()
   return (
 <div className="navbar-wrap">
 <div className="navbar">
@@ -15,24 +19,25 @@ const Navbar = () => {
                     <Link to="/" className="navbar-link logo">SFood</Link>
                 </li>
                 <li className="navbar-item">
-                    <Link to="/" className="navbar-link active">Главная</Link>
+                    <Link to="/" className="navbar-link active">{t("main")}</Link>
                 </li>
                 <li className="navbar-item">
-                    <Link to="/fillial" className="navbar-link">Филиалы </Link>
+                    <Link to="/fillial" className="navbar-link">{t("filial")} </Link>
                 </li>
                 <li className="navbar-item">
-                    <Link to="/info" className="navbar-link">О нас</Link>
+                    <Link to="/info" className="navbar-link">{t("about")}</Link>
                 </li>
                 <li className="navbar-item">
-                    <Link to="/contact" className="navbar-link">Контакты</Link>
+                    <Link to="/contact" className="navbar-link">{t("contact")}</Link>
                 </li>
             </ul>
             <div className="navbar-right">
-                <button className="navbar-btn navbar-icons">
-                    <Link to="" className="navbar-icon"><i className="fa-solid fa-cart-shopping"></i></Link>
-                </button>
+                                 <select onClick={changeLangHandler}  className="navbar-select">
+                                       <option value="uz">Uz</option>
+                                       <option value="en">En</option>
+                                    </select>                     
                 <button className="navbar-btn">
-                    <Link to="/connect" className="navbar-sublink">Войти</Link>
+                    <Link to="/connect" className="navbar-sublink">{t("connect")}</Link>
                 </button>
             </div>
         </div>

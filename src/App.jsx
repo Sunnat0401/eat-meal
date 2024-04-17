@@ -19,28 +19,53 @@ import Salad from './Pages/Salad/Salad';
 import Bread from './Pages/Bread/Bread';
 import Sauce from './Pages/Sauce/Sauce';
 import Connect from './Pages/Connect/Connect'
+import { createRoot } from 'react-dom/client';
+import i18n from "i18next";
+import { useTranslation, initReactI18next } from "react-i18next";
+import translationEn from './locale/translationEn';
+import translationUz from './locale/translationUz';
+i18n
+  .use(initReactI18next) 
+  .init({
+    resources: {
+      en: {
+        translation: translationEn
+      },
+      uz: {translation: translationUz}
+    },
+    lng: "uz", 
+    fallbackLng: "uz",
+
+    interpolation: {
+      escapeValue: false 
+    }
+  });
 const App = () => {
+  const changeLang = (value) =>{
+    i18n.changeLanguage(value)
+  }
+  const { t } = useTranslation();
   return (
     <div>
       <Routes>
-        <Route path="/" element={<HomePages/>}/>
-        <Route path="/fillial" element={<Fillial/>}/>
-        <Route path="/info" element={<Info/>}/>
-        <Route path="/contact" element={<Contact/>}/>
-        <Route path="/desert" element={<Desert/>}/>
-        <Route path="/set" element={<Set/>}/>
-        <Route path="/haggi" element={<Haggi/>}/>
-        <Route path="/burger" element={<Burger/>}/>
-        <Route path="/pizza" element={<Pizza/>}/>
-        <Route path="/sendwich" element={<Sendwich/>}/>
-        <Route path="/donar" element={<Donar/>}/>
-        <Route path="/xot-dog" element={<XotDog/>}/>
-        <Route path="/free" element={<Free/>}/>
-        <Route path="/drink" element={<Drink/>}/>
-        <Route path="/salad" element={<Salad/>}/>
-        <Route path="/bread" element={<Bread/>}/>
-        <Route path="/sauce" element={<Sauce/>}/>
-        <Route path="/connect" element={<Connect/>}/>
+        <Route path="/connect" element={<Connect changeLang={changeLang}/>}/>
+        <Route path="/contact" element={<Contact changeLang={changeLang}/>}/>
+        <Route path="/info" element={<Info changeLang={changeLang}/>}/>
+        <Route path="/fillial" element={<Fillial changeLang={changeLang} />}/>
+        <Route path="/" element={<HomePages changeLang={changeLang}/>}/>
+        <Route path="/desert" element={<Desert changeLang={changeLang}/>}/>
+        <Route path="/set" element={<Set changeLang={changeLang}/>}/>
+        <Route path="/burger" element={<Burger changeLang={changeLang}/>}/>
+        <Route path="/pizza" element={<Pizza changeLang={changeLang}/>}/>
+        <Route path="/sendwich" element={<Sendwich changeLang={changeLang}/>}/>
+        <Route path="/haggi" element={<Haggi changeLang={changeLang}/>}/>
+        <Route path="/donar" element={<Donar changeLang={changeLang}/>}/>
+        <Route path="/xot-dog" element={<XotDog changeLang={changeLang}/>}/>
+        <Route path="/free" element={<Free/>} changeLang={changeLang}/>
+        <Route path="/drink" element={<Drink changeLang={changeLang}/>}/>
+        <Route path="/salad" element={<Salad changeLang={changeLang}/>}/>
+        <Route path="/bread" element={<Bread changeLang={changeLang}/>}/>
+        <Route path="/sauce" element={<Sauce changeLang={changeLang}/>}/>
         
       </Routes>
 

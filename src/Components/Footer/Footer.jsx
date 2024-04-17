@@ -7,11 +7,11 @@ const Footer = () => {
         <div className="container">
                 <div className="footer-top">
                     <ul className="footer-lists">
-                        <li className="footer-list"><Link to="/" className="footer-link footer-logo">Sfood</Link></li>
-                        <li className="footer-list"><Link to="/" className="footer-link">Главная</Link></li>
-                        <li className="footer-list"><Link to="/fillial" className="footer-link">Филиалы</Link></li>
-                        <li className="footer-list"><Link to="/info" className="footer-link">О нас</Link></li>
-                        <li className="footer-list"><Link  to="/contact" className="footer-link">Контакты</Link></li>
+                        <li className="footer-list" ><Link to="/" className="footer-link footer-logo" onClick={()=>{ window.scrollTo({top:0})}}>Sfood</Link></li>
+                        <li className="footer-list"><Link to="/" className="footer-link" onClick={()=>{ window.scrollTo({top:0})}} >Главная</Link></li>
+                        <li className="footer-list"><Link to="/fillial" className="footer-link"  onClick={()=>{ window.scrollTo({top:0})}} >Филиалы</Link></li>
+                        <li className="footer-list"><Link to="/info" className="footer-link"  onClick={()=>{ window.scrollTo({top:0})}} >О нас</Link></li>
+                        <li className="footer-list"><Link  to="/contact" className="footer-link"  onClick={()=>{ window.scrollTo({top:0})}} >Контакты</Link></li>
                     </ul>
                     <div className="footer-info">
                         <h2 className="footer-subtitle">Присоединяйтесь к нам</h2>

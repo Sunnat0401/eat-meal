@@ -12,13 +12,62 @@ import set6 from '../../assets/set6.jpg'
 import set7 from '../../assets/set7.png'
 import set8 from '../../assets/set8.jpg'
 import set9 from '../../assets/set9.jpg'
+import gz1 from '../../assets/gz1.webp'
+import gz2 from '../../assets/gz2.webp'
+import gz3 from '../../assets/gz3.webp'
+import gz4 from '../../assets/gz4.webp'
+import gz5 from '../../assets/gz5.webp'
+import gz6 from '../../assets/gz6.webp'
+import xal from '../../assets/xal1.webp'
+import xal2 from "../../assets/xal2.webp"
 import {Link} from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+
 import './Set.css'
 import Footer from '../../Components/Footer/Footer'
-const Set = () => {
+import TemporaryDrawer from '../Hamburger/Hamburger'
+const Set = ({changeLang}) => {
+  const changeLangHandler = (e) =>{
+    changeLang(e.target.value)
+ }
+ const {t} = useTranslation()
   return (
     <div className="set">
-     <Navbar/>   
+    <div className="navbar-wrap">
+<div className="navbar">
+        <div className="container">
+            <div className="hamburger">
+            <TemporaryDrawer/>
+            </div>
+            <ul className="navbar-left">
+                <li className="navbar-item logo">
+                    <Link to="/" className="navbar-link logo">SFood</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/" className="navbar-link active">{t("main")}</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/fillial" className="navbar-link">{t("filial")} </Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/info" className="navbar-link">{t("about")}</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/contact" className="navbar-link">{t("contact")}</Link>
+                </li>
+            </ul>
+            <div className="navbar-right">
+                                 <select onClick={changeLangHandler}  className="navbar-select">
+                                       <option value="uz">Uz</option>
+                                       <option value="en">En</option>
+                                    </select>                     
+                <button className="navbar-btn">
+                    <Link to="/connect" className="navbar-sublink">{t("connect")}</Link>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
      {/* Carusel */}
      <div id="carouselExample" className="carousel slide">
@@ -60,10 +109,10 @@ const Set = () => {
         <div className="wrapper">
         <div className="container">
           <ul className="menu-meal">
-            <li className="meal"><Link to="/" className="menu-link ">Lavash</Link></li>
+            <li className="meal"><Link to="/" className="menu-link ">Menu</Link></li>
             <li className="meal"><Link to="/desert" className="menu-link ">Desert</Link></li>
-            <li className="meal actives"><Link to="/set" className="menu-link ">Set</Link></li>
-            <li className="meal"><Link to="/haggi" className="menu-link">Xaggi</Link></li>
+            <li className="meal actives"><Link to="/set" className="menu-link ">Gazaklar</Link></li>
+            <li className="meal"><Link to="/haggi" className="menu-link">To'plam</Link></li>
             <li className="meal"><Link to="/burger" className="menu-link">Burger</Link></li>
             <li className="meal"><Link to="/pizza" className="menu-link">Pizza</Link></li>
             <li className="meal"><Link to="/sendwich" className="menu-link">Sendvich</Link></li>
@@ -84,84 +133,75 @@ const Set = () => {
   <div className="foods">
     <div className="container">
       <div className="foods-lists">
-             <img src={set1} alt="tfoods" className="foods-img" />
-             <h4 className="foods-title">Spicy seasoned seafood noodles</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={gz1} alt="tfoods" className="foods-img" />
+             <h4 className="foods-title">Fri kartoshkasi</h4>
+             <p className='foods-text'>Qovurlilgan barra kartoshkalar , juda ...</p>
              <div className="foods-info">
-              <span className="foods-sum">2.29 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">9 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
-             <img src={set2} alt="foods" className="foods-img" />
-             <h4 className="foods-title">x owls available</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={gz2} alt="foods" className="foods-img" />
+             <h4 className="foods-title">Kraft paket</h4>
+             <p className='foods-text'>Xarid uchun ajoyib paket , unda ...</p>
              <div className="foods-info">
-              <span className="foods-sum">3.29 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">2 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
-             <img src={set3} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Salted Pasta with mushroom sauce</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={gz3} alt="foods" className="foods-img" />
+             <h4 className="foods-title">Box</h4>
+             <p className='foods-text'>Strips (2 dona), kartoshka fri...</p>
              <div className="foods-info">
-              <span className="foods-sum">5.29 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">22 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
-             <img src={set4} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Beef dumpling in hot soup</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={gz4} alt="foods" className="foods-img" />
+             <h4 className="foods-title">Strips</h4>
+             <p className='foods-text'>Juda mazzali bo'lgan strips....</p>
              <div className="foods-info">
-              <span className="foods-sum">7.09 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">17 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
-             <img src={set5} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Hot spicy fried rice with omelet</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={gz5} alt="foods" className="foods-img" />
+             <h4 className="foods-title">Naggest</h4>
+             <p className='foods-text'>Juda mazzali bo'lgan naggest...</p>
              <div className="foods-info">
               <span className="foods-sum">9.29 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
-             <img src={set6} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Spicy instant noodle with</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={gz6} alt="foods" className="foods-img" />
+             <h4 className="foods-title">Po derevenskiy</h4>
+             <p className='foods-text'>Juda mazzali bo'lgan derevenskiy...</p>
              <div className="foods-info">
-              <span className="foods-sum">7.56 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">15 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
-             <img src={set7} alt="foods" className="foods-img" />
-             <h4 className="foods-title">constant noodle special omelette</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={xal} alt="foods" className="foods-img" />
+             <h4 className="foods-title">Xalapeno</h4>
+             <p className='foods-text'>Juda mazzali bo'lgan xalapeno...</p>
              <div className="foods-info">
-              <span className="foods-sum">9.21 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">3 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
-             <img src={set8} alt="foods" className="foods-img" />
-             <h4 className="foods-title">noodle with spinach</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={xal2} alt="foods" className="foods-img" />
+             <h4 className="foods-title">Sarimsoqli sous</h4>
+             <p className='foods-text'>Juda mazzali bo'lgan derevenskiy...</p>
              <div className="foods-info">
-              <span className="foods-sum">6.43 сум</span>
-              <button className="foods-btn">Заказать</button>
-             </div>
-      </div>
-      <div className="foods-lists">
-             <img src={set9} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Salted Pasta with mushroom sauce</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
-             <div className="foods-info">
-              <span className="foods-sum">5.59 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">5 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
     </div>

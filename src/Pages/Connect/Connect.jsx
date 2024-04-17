@@ -4,10 +4,16 @@ import Footer from '../../Components/Footer/Footer'
 import TemporaryDrawer from '../Hamburger/Hamburger'
 import { Link } from 'react-router-dom'
 import '../../Components/Navbar/Navbar.css'
-const Connect = () => {
+import { useTranslation } from 'react-i18next'
+
+const Connect = ({changeLang}) => {
+    const changeLangHandler = (e) =>{
+        changeLang(e.target.value)
+     }
+     const {t} = useTranslation()
   return (
     <div className="connect">
-                             <div className="navbar-wrap">
+<div className="navbar-wrap">
 <div className="navbar">
         <div className="container">
             <div className="hamburger">
@@ -18,24 +24,25 @@ const Connect = () => {
                     <Link to="/" className="navbar-link logo">SFood</Link>
                 </li>
                 <li className="navbar-item">
-                    <Link to="/" className="navbar-link ">Главная</Link>
+                    <Link to="/" className="navbar-link ">{t("main")}</Link>
                 </li>
                 <li className="navbar-item">
-                    <Link to="/fillial" className="navbar-link ">Филиалы </Link>
+                    <Link to="/fillial" className="navbar-link">{t("filial")} </Link>
                 </li>
                 <li className="navbar-item">
-                    <Link to="/info" className="navbar-link ">О нас</Link>
+                    <Link to="/info" className="navbar-link">{t("about")}</Link>
                 </li>
                 <li className="navbar-item">
-                    <Link to="/contact" className="navbar-link ">Контакты</Link>
+                    <Link to="/contact" className="navbar-link ">{t("contact")}</Link>
                 </li>
             </ul>
             <div className="navbar-right">
-                <button className="navbar-btn navbar-icons">
-                    <Link to="" className="navbar-icon"><i className="fa-solid fa-cart-shopping"></i></Link>
-                </button>
+                                 <select onClick={changeLangHandler}  className="navbar-select">
+                                       <option value="uz">Uz</option>
+                                       <option value="en">En</option>
+                                    </select>                     
                 <button className="navbar-btn active">
-                    <Link to="/connect" className="navbar-sublink ">Войти</Link>
+                    <Link to="/connect" className="navbar-sublink ">{t("connect")}</Link>
                 </button>
             </div>
         </div>

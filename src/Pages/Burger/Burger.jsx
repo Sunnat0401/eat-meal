@@ -12,13 +12,57 @@ import burger6 from '../../assets/burder6.jpg'
 import burger7 from '../../assets/burder7.jpg'
 import burger8 from '../../assets/burder8.jpg'
 import burger9 from '../../assets/burder9.jpg'
+import brg from "../../assets/burg1.webp"
+import brg2 from '../../assets/burg2.webp'
+import brg3 from '../../assets/burg3.webp'
 import {Link} from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+
 import './Burger.css'
 import Footer from '../../Components/Footer/Footer'
-const Burger = () => {
+import TemporaryDrawer from '../Hamburger/Hamburger'
+const Burger = ({changeLang}) => {
+  const changeLangHandler = (e) =>{
+    changeLang(e.target.value)
+ }
+ const {t} = useTranslation()
   return (
     <div className="set">
-     <Navbar/>   
+    <div className="navbar-wrap">
+<div className="navbar">
+        <div className="container">
+            <div className="hamburger">
+            <TemporaryDrawer/>
+            </div>
+            <ul className="navbar-left">
+                <li className="navbar-item logo">
+                    <Link to="/" className="navbar-link logo">SFood</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/" className="navbar-link active">{t("main")}</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/fillial" className="navbar-link">{t("filial")} </Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/info" className="navbar-link">{t("about")}</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/contact" className="navbar-link">{t("contact")}</Link>
+                </li>
+            </ul>
+            <div className="navbar-right">
+                                 <select onClick={changeLangHandler}  className="navbar-select">
+                                       <option value="uz">Uz</option>
+                                       <option value="en">En</option>
+                                    </select>                     
+                <button className="navbar-btn">
+                    <Link to="/connect" className="navbar-sublink">{t("connect")}</Link>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
      {/* Carusel */}
      <div id="carouselExample" className="carousel slide">
@@ -60,9 +104,9 @@ const Burger = () => {
         <div className="wrapper">
         <div className="container">
           <ul className="menu-meal">
-          <li className="meal"><Link to="/" className="menu-link ">Lavash</Link></li>
+          <li className="meal"><Link to="/" className="menu-link ">Menu</Link></li>
             <li className="meal"><Link to="/desert" className="menu-link ">Desert</Link></li>
-            <li className="meal"><Link to="/set" className="menu-link ">Set</Link></li>
+            <li className="meal"><Link to="/set" className="menu-link ">Gazaklar</Link></li>
             <li className="meal"><Link to="/haggi" className="menu-link ">Xaggi</Link></li>
             <li className="meal actives"><Link to="/burger" className="menu-link ">Burger</Link></li>
             <li className="meal"><Link to="/pizza" className="menu-link">Pizza</Link></li>
@@ -84,84 +128,75 @@ const Burger = () => {
   <div className="foods">
     <div className="container">
       <div className="foods-lists">
-             <img src={burger1} alt="tfoods" className="foods-img" />
-             <h4 className="foods-title">Spicy seasoned seafood noodles</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={brg} alt="tfoods" className="foods-img" />
+             <h4 className="foods-title">Gamburger</h4>
+             <p className='foods-text'>Burger bulochkasi, tuzlangan bodring, pomidor, go'shtli...</p>
              <div className="foods-info">
-              <span className="foods-sum">2.29 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">25 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
-             <img src={burger2} alt="foods" className="foods-img" />
-             <h4 className="foods-title">x owls available</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={brg2} alt="foods" className="foods-img" />
+             <h4 className="foods-title">Chizburger</h4>
+             <p className='foods-text'>Burger bulochkasi, tuzlangan bodring, pomidor, go'shtli...</p>
              <div className="foods-info">
-              <span className="foods-sum">3.29 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">30 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
-             <img src={burger3} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Salted Pasta with mushroom sauce</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={brg3} alt="foods" className="foods-img" />
+             <h4 className="foods-title">Bigburger</h4>
+             <p className='foods-text'>Burger bulochkasi, tuzlangan bodring, pomidor, go'shtli...</p>
              <div className="foods-info">
-              <span className="foods-sum">5.29 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">40 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
              <img src={burger4} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Beef dumpling in hot soup</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <h4 className="foods-title">Gamburger and free</h4>
+             <p className='foods-text'>Burger bulochkasi, tuzlangan bodring, pomidor, go'shtli...</p>
              <div className="foods-info">
-              <span className="foods-sum">7.09 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">50 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
              <img src={burger5} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Hot spicy fried rice with omelet</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <h4 className="foods-title">Xot-dog and free</h4>
+             <p className='foods-text'>Burger bulochkasi, tuzlangan bodring, pomidor, go'shtli...</p>
              <div className="foods-info">
               <span className="foods-sum">9.29 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
              <img src={burger6} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Spicy instant noodle with</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <h4 className="foods-title">Gamburger Retro</h4>
+             <p className='foods-text'>Burger bulochkasi, tuzlangan bodring, pomidor, go'shtli...</p>
              <div className="foods-info">
-              <span className="foods-sum">7.56 сум</span>
-              <button className="foods-btn">Заказать</button>
-             </div>
-      </div>
-      <div className="foods-lists">
-             <img src={burger7} alt="foods" className="foods-img" />
-             <h4 className="foods-title">constant noodle special omelette</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
-             <div className="foods-info">
-              <span className="foods-sum">9.21 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">72 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
              <img src={burger8} alt="foods" className="foods-img" />
-             <h4 className="foods-title">noodle with spinach</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <h4 className="foods-title">Gamburger and cofee</h4>
+             <p className='foods-text'>Burger bulochkasi, tuzlangan bodring, pomidor, go'shtli...</p>
              <div className="foods-info">
-              <span className="foods-sum">6.43 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">64 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
              <img src={burger9} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Salted Pasta with mushroom sauce</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <h4 className="foods-title">Gamburger german</h4>
+             <p className='foods-text'>Burger bulochkasi, tuzlangan bodring, pomidor, go'shtli...</p>
              <div className="foods-info">
-              <span className="foods-sum">5.59 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">50 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
     </div>

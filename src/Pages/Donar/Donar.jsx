@@ -12,12 +12,55 @@ import donar6 from '../../assets/donar6.jpg'
 import donar7 from '../../assets/donar7.jpg'
 import donar8 from '../../assets/donar8.jpg'
 import donar9 from '../../assets/donar9.jpg'
+import donarr from '../../assets/donarl.webp'
+import donarr2 from '../../assets/donarl2.webp'
 import {Link} from 'react-router-dom'
 import Footer from '../../Components/Footer/Footer'
-const Donar = () => {
+import { useTranslation } from 'react-i18next'
+import TemporaryDrawer from '../Hamburger/Hamburger'
+
+const Donar = ({changeLang}) => {
+  const changeLangHandler = (e) =>{
+    changeLang(e.target.value)
+ }
+ const {t} = useTranslation()
   return (
     <div className="set">
-     <Navbar/>   
+  <div className="navbar-wrap">
+<div className="navbar">
+        <div className="container">
+            <div className="hamburger">
+            <TemporaryDrawer/>
+            </div>
+            <ul className="navbar-left">
+                <li className="navbar-item logo">
+                    <Link to="/" className="navbar-link logo">SFood</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/" className="navbar-link active">{t("main")}</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/fillial" className="navbar-link">{t("filial")} </Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/info" className="navbar-link">{t("about")}</Link>
+                </li>
+                <li className="navbar-item">
+                    <Link to="/contact" className="navbar-link">{t("contact")}</Link>
+                </li>
+            </ul>
+            <div className="navbar-right">
+                                 <select onClick={changeLangHandler}  className="navbar-select">
+                                       <option value="uz">Uz</option>
+                                       <option value="en">En</option>
+                                    </select>                     
+                <button className="navbar-btn">
+                    <Link to="/connect" className="navbar-sublink">{t("connect")}</Link>
+                </button>
+            </div>
+        </div>
+    </div>
+</div> 
 
      {/* Carusel */}
      <div id="carouselExample" className="carousel slide">
@@ -83,83 +126,74 @@ const Donar = () => {
   <div className="foods">
     <div className="container">
       <div className="foods-lists">
-             <img src={donar1} alt="tfoods" className="foods-img" />
-             <h4 className="foods-title">Spicy seasoned seafood noodles</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={donarr} alt="tfoods" className="foods-img" />
+             <h4 className="foods-title">Donar kabeb</h4>
+             <p className='foods-text'>Mol go'shti donari-go'sht, makkajo'xori bilan guruch, k...</p>
              <div className="foods-info">
-              <span className="foods-sum">2.29 сум</span>
+              <span className="foods-sum">42 000 so'm</span>
               <button className="foods-btn">Заказать</button>
              </div>
       </div>
       <div className="foods-lists">
-             <img src={donar2} alt="foods" className="foods-img" />
-             <h4 className="foods-title">x owls available</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={donarr2} alt="foods" className="foods-img" />
+             <h4 className="foods-title">Donar </h4>
+             <p className='foods-text'>Mol go'shti donari-go'sht, makkajo'xori bilan guruch, k...</p>
              <div className="foods-info">
-              <span className="foods-sum">3.29 сум</span>
+              <span className="foods-sum">37 000 so'm</span>
               <button className="foods-btn">Заказать</button>
              </div>
       </div>
       <div className="foods-lists">
              <img src={donar3} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Salted Pasta with mushroom sauce</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <h4 className="foods-title">Donar Box</h4>
+             <p className='foods-text'>Mol go'shti donari-go'sht, makkajo'xori bilan guruch, k...</p>
              <div className="foods-info">
-              <span className="foods-sum">5.29 сум</span>
-              <button className="foods-btn">Заказать</button>
-             </div>
-      </div>
-      <div className="foods-lists">
-             <img src={donar4} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Beef dumpling in hot soup</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
-             <div className="foods-info">
-              <span className="foods-sum">7.09 сум</span>
+              <span className="foods-sum">45 000 so'm </span>
               <button className="foods-btn">Заказать</button>
              </div>
       </div>
       <div className="foods-lists">
              <img src={donar5} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Hot spicy fried rice with omelet</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <h4 className="foods-title">Donar</h4>
+             <p className='foods-text'>Mol go'shti donari-go'sht, makkajo'xori bilan guruch, k...</p>
              <div className="foods-info">
-              <span className="foods-sum">9.29 сум</span>
+              <span className="foods-sum">30 000 so'm </span>
               <button className="foods-btn">Заказать</button>
              </div>
       </div>
       <div className="foods-lists">
              <img src={donar6} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Spicy instant noodle with</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <h4 className="foods-title">Donar</h4>
+             <p className='foods-text'>Mol go'shti donari-go'sht, makkajo'xori bilan guruch, k...</p>
              <div className="foods-info">
-              <span className="foods-sum">7.56 сум</span>
+              <span className="foods-sum">50 000 so'm </span>
               <button className="foods-btn">Заказать</button>
              </div>
       </div>
       <div className="foods-lists">
              <img src={donar7} alt="foods" className="foods-img" />
-             <h4 className="foods-title">constant noodle special omelette</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <h4 className="foods-title">Donar</h4>
+             <p className='foods-text'>Mol go'shti donari-go'sht, makkajo'xori bilan guruch, k...</p>
              <div className="foods-info">
-              <span className="foods-sum">9.21 сум</span>
+              <span className="foods-sum">32 000 so'm </span>
               <button className="foods-btn">Заказать</button>
              </div>
       </div>
       <div className="foods-lists">
              <img src={donar8} alt="foods" className="foods-img" />
-             <h4 className="foods-title">noodle with spinach</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <h4 className="foods-title">Donar</h4>
+             <p className='foods-text'>Mol go'shti donari-go'sht, makkajo'xori bilan guruch, k...</p>
              <div className="foods-info">
-              <span className="foods-sum">6.43 сум</span>
+              <span className="foods-sum">55 000 so'm </span>
               <button className="foods-btn">Заказать</button>
              </div>
       </div>
       <div className="foods-lists">
              <img src={donar9} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Salted Pasta with mushroom sauce</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <h4 className="foods-title">Donar</h4>
+             <p className='foods-text'>Mol go'shti donari-go'sht, makkajo'xori bilan guruch, k...</p>
              <div className="foods-info">
-              <span className="foods-sum">5.59 сум</span>
+              <span className="foods-sum">90 000 so'm </span>
               <button className="foods-btn">Заказать</button>
              </div>
       </div>
