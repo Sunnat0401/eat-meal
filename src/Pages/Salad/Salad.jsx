@@ -12,6 +12,11 @@ import salad6 from '../../assets/salad6.jpg'
 import salad7 from '../../assets/salad7.webp'
 import salad8 from '../../assets/salad8.jpg'
 import salad9 from '../../assets/salad9.jpg'
+import ss1 from '../../assets/ss1.webp'
+import ss2 from '../../assets/ss2.webp'
+import ss3 from '../../assets/ss3.webp'
+import ss4 from '../../assets/ss4.webp'
+import ss5 from '../../assets/ss5.webp'
 import {Link} from 'react-router-dom'
 import Footer from '../../Components/Footer/Footer'
 import { useTranslation } from 'react-i18next'
@@ -100,10 +105,10 @@ const Salad = ({changeLang}) => {
         <div className="wrapper">
         <div className="container">
           <ul className="menu-meal">
-          <li className="meal"><Link to="/" className="menu-link ">Lavash</Link></li>
+          <li className="meal"><Link to="/" className="menu-link ">Menu</Link></li>
             <li className="meal"><Link to="/desert" className="menu-link ">Desert</Link></li>
-            <li className="meal"><Link to="/set" className="menu-link ">Set</Link></li>
-            <li className="meal"><Link to="/haggi" className="menu-link ">Xaggi</Link></li>
+            <li className="meal"><Link to="/set" className="menu-link ">Gazaklar</Link></li>
+            <li className="meal"><Link to="/haggi" className="menu-link ">To'plam</Link></li>
             <li className="meal"><Link to="/burger" className="menu-link">Burger</Link></li>
             <li className="meal"><Link to="/pizza" className="menu-link">Pizza</Link></li>
             <li className="meal"><Link to="/sendwich" className="menu-link ">Sendvich</Link></li>
@@ -124,84 +129,75 @@ const Salad = ({changeLang}) => {
   <div className="foods">
     <div className="container">
       <div className="foods-lists">
-             <img src={salad1} alt="tfoods" className="foods-img" />
-             <h4 className="foods-title">Spicy seasoned seafood noodles</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={ss1} alt="tfoods" className="foods-img" />
+             <h4 className="foods-title">Ketchup </h4>
+             <p className='foods-text'>Siz istagan barcha sabzavot va s.....</p>
              <div className="foods-info">
-              <span className="foods-sum">2.29 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum"> 3 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
-             <img src={salad2} alt="foods" className="foods-img" />
+             <img src={ss2} alt="foods" className="foods-img" />
              <h4 className="foods-title">x owls available</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <p className='foods-text'>Siz istagan barcha sabzavot va s.....</p>
              <div className="foods-info">
-              <span className="foods-sum">3.29 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">3 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
-             <img src={salad3} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Salted Pasta with mushroom sauce</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={ss3} alt="foods" className="foods-img" />
+             <h4 className="foods-title">Sarimsoqli sous</h4>
+             <p className='foods-text'>Siz istagan barcha sabzavot va s.....</p>
              <div className="foods-info">
-              <span className="foods-sum">5.29 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">3 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
-             <img src={salad4} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Beef dumpling in hot soup</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={ss4} alt="foods" className="foods-img" />
+             <h4 className="foods-title">Xalapeno</h4>
+             <p className='foods-text'>Siz istagan barcha sabzavot va s.....</p>
              <div className="foods-info">
-              <span className="foods-sum">7.09 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">3 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
-             <img src={salad5} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Hot spicy fried rice with omelet</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <img src={ss4} alt="foods" className="foods-img" />
+             <h4 className="foods-title">Shirin va nordon sous</h4>
+             <p className='foods-text'>Siz istagan barcha sabzavot va s.....</p>
              <div className="foods-info">
-              <span className="foods-sum">9.29 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">3 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
              <img src={salad6} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Spicy instant noodle with</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <h4 className="foods-title">Mevali salad</h4>
+             <p className='foods-text'>Siz istagan barcha sabzavot va s.....</p>
              <div className="foods-info">
-              <span className="foods-sum">7.56 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">5 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
              <img src={salad7} alt="foods" className="foods-img" />
-             <h4 className="foods-title">constant noodle special omelette</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <h4 className="foods-title">Karamli salad</h4>
+             <p className='foods-text'>Siz istagan barcha sabzavot va s.....</p>
              <div className="foods-info">
-              <span className="foods-sum">9.21 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">5 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
       <div className="foods-lists">
              <img src={salad8} alt="foods" className="foods-img" />
-             <h4 className="foods-title">noodle with spinach</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
+             <h4 className="foods-title">Ko'katli salad</h4>
+             <p className='foods-text'>Siz istagan barcha sabzavot va s.....</p>
              <div className="foods-info">
-              <span className="foods-sum">6.43 сум</span>
-              <button className="foods-btn">Заказать</button>
-             </div>
-      </div>
-      <div className="foods-lists">
-             <img src={salad9} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Salted Pasta with mushroom sauce</h4>
-             <p className='foods-text'>Информация: лаваш мясной classic, картофель-фри, пеп</p>
-             <div className="foods-info">
-              <span className="foods-sum">5.59 сум</span>
-              <button className="foods-btn">Заказать</button>
+              <span className="foods-sum">4 000 so'm</span>
+              <button className="foods-btn">Buyurtma</button>
              </div>
       </div>
     </div>

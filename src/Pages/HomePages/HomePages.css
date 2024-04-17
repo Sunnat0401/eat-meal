@@ -84,8 +84,8 @@
     box-shadow: 0 4px 10px rgba(0,0,0,.3);
     cursor: pointer;
     margin: 15px 4px;
-    height: 390px;
-    padding: 10px 15px 18px;
+    height: 365px !important;
+    padding: 10px 15px  ;
     transition: .3s;
     width: 290px
 }

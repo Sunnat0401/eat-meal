@@ -105,21 +105,21 @@ const HomePages = ({changeLang}) => {
       <div className="menu">
         <div className="wrapper">
         <div className="container">
-          <ul className="menu-meal">
-            <li className="meal"><Link to="/" className="menu-link ">Menu</Link></li>
+        <ul className="menu-meal">
+          <li className="meal"><Link to="/" className="menu-link ">Menu</Link></li>
             <li className="meal actives"><Link to="/desert" className="menu-link ">Desert</Link></li>
-            <li className="meal"><Link to="/set" className="menu-link">Gazaklar</Link></li>
-            <li className="meal"><a href="#" className="menu-link">To'plam</a></li>
-            <li className="meal"><a href="#" className="menu-link">Burger</a></li>
-            <li className="meal"><a href="#" className="menu-link">Pizza</a></li>
-            <li className="meal"><a href="#" className="menu-link">Sendvich</a></li>
-            <li className="meal"><a href="#" className="menu-link">Donar</a></li>
-            <li className="meal"><a href="#" className="menu-link">Xot-dog</a></li>
-            <li className="meal"><a href="#" className="menu-link">Free</a></li>
-            <li className="meal"><a href="#" className="menu-link">Drink</a></li>
-            <li className="meal"><a href="#" className="menu-link">Salad</a></li>
-            <li className="meal"><a href="#" className="menu-link">Bread</a></li>
-            <li className="meal"><a href="#" className="menu-link">Sauce</a></li>
+            <li className="meal"><Link to="/set" className="menu-link ">Gazaklar</Link></li>
+            <li className="meal"><Link to="/haggi" className="menu-link ">To'plamlar</Link></li>
+            <li className="meal"><Link to="/burger" className="menu-link">Burger</Link></li>
+            <li className="meal"><Link to="/pizza" className="menu-link">Pizza</Link></li>
+            <li className="meal"><Link to="/sendwich" className="menu-link ">Sendvich</Link></li>
+            <li className="meal"><Link to="/donar" className="menu-link ">Donar</Link></li>
+            <li className="meal"><Link to="/xot-dog" className="menu-link">Xot-dog</Link></li>
+            <li className="meal"><Link to="/free" className="menu-link ">Free</Link></li>
+            <li className="meal "><Link to="/drink" className="menu-link ">Drink</Link></li>
+            <li className="meal"><Link to="/salad" className="menu-link">Salad</Link></li>
+            <li className="meal"><Link to="/bread" className="menu-link">Bread</Link></li>
+            <li className="meal"><Link to="/sauce" className="menu-link">Sauce</Link></li>
           </ul>
         </div>
         </div>

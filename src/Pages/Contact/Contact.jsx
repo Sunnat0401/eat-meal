@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 
 import './Contact.css'
 import '../../Components/Navbar/Navbar.css'
-const Contact = (changeLang) => {
+const Contact = ({changeLang}) => {
     const changeLangHandler = (e) =>{
         changeLang(e.target.value)
      }

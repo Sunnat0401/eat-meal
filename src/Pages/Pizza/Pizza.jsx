@@ -103,7 +103,7 @@ const Pizza = ({changeLang}) => {
           <li className="meal"><Link to="/" className="menu-link ">Menu</Link></li>
             <li className="meal"><Link to="/desert" className="menu-link ">Desert</Link></li>
             <li className="meal"><Link to="/set" className="menu-link ">Gazaklar</Link></li>
-            <li className="meal"><Link to="/haggi" className="menu-link ">Xaggi</Link></li>
+            <li className="meal"><Link to="/haggi" className="menu-link ">To'plam</Link></li>
             <li className="meal"><Link to="/burger" className="menu-link">Burger</Link></li>
             <li className="meal actives"><Link to="/pizza" className="menu-link ">Pizza</Link></li>
             <li className="meal"><Link to="/sendwich" className="menu-link">Sendvich</Link></li>

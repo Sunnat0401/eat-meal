@@ -163,7 +163,7 @@ const HomePages = ({changeLang}) => {
   {/* Foods */}
 
   {/* Footer */}
-    <Footer/>
+    <Footer changeLang={changeLang}/>
   {/* Footer */}
     </div>
   )
