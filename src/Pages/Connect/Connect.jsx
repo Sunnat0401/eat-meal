@@ -17,7 +17,7 @@ const Connect = ({changeLang}) => {
 <div className="navbar">
         <div className="container">
             <div className="hamburger">
-            <TemporaryDrawer/>
+            <TemporaryDrawer changeLang={changeLang}/>
             </div>
             <ul className="navbar-left">
                 <li className="navbar-item logo">
@@ -50,11 +50,10 @@ const Connect = ({changeLang}) => {
 </div>
         <div className="container">
             <div className="connect-group">
-            <h1 className="connect-title">Войти</h1>
+            <h1 className="connect-title">{t("connect1")}</h1>
                  <div className="connect-wrapper">
                     <img src={qrcode} alt="qrcode " className="connect-img"   />
-                    <p className="connect-text">Комментарий в Телеграмме
-оставьте комментарий или задайте вопрос</p>
+                    <p className="connect-text">{t("connect2")}</p>
                     <a href="@maxwaymasterfood_bot" className="connect-link"><i className="fa-brands fa-telegram"></i> @maxwaymasterfood_bot</a>
                  </div>
             </div>

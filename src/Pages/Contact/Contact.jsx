@@ -17,7 +17,7 @@ const Contact = ({changeLang}) => {
 <div className="navbar">
         <div className="container">
             <div className="hamburger">
-            <TemporaryDrawer/>
+            <TemporaryDrawer changeLang={changeLang}/>
             </div>
             <ul className="navbar-left">
                 <li className="navbar-item logo">
@@ -52,42 +52,42 @@ const Contact = ({changeLang}) => {
         <div className="container">
             <div className="contact-top">
                 <h3 className="contact-title">
-                Телефоны контактных центров
+              {t("contact1")}
                 </h3>
-                <p className="contact-text">Круглосуточно, без выходных</p>
+                <p className="contact-text">{t("contact2")}</p>
                 <ul className="contact-list">
                     <li className="contact-item">
-                        <p className='contact-text'>Ташкент</p>
+                        <p className='contact-text'>Toshkent</p>
                         <a className='contact-to' href="tel:+998901249484">+998901246484</a>
                     </li>
                     <li className="contact-item">
-                        <p className='contact-text'>Наманган</p>
+                        <p className='contact-text'>Namangan</p>
                         <a className='contact-to' href="tel:+998936689974">+998936689974</a>
                     </li>
                     <li className="contact-item">
-                        <p className='contact-text'>Алмалык</p>
+                        <p className='contact-text'>Almaliq</p>
                         <a className='contact-to' href="tel:+998333472770">+998 33 3472470</a>
                     </li>
                 </ul>
             </div>
             <div className="contact-middle">
-                <h3 className="contact-title">Отдел поддержки клиентов</h3>
+                <h3 className="contact-title">{t("contact3")}</h3>
                 <ul className="contact-lists">
                     <li className="contact-items">
-                    <p className='contact-texts'>Электронная почта</p>
+                    <p className='contact-texts'>{t("contact4")}</p>
                           <a href="mailto:sunnattoxtaqulov4444@gmail.com" className="contact-to">sunnattoxtaqulov4444@gmail.com</a>
                     </li>
                     <li className="contact-items">
-                    <p className='contact-texts'>Контактный телефон</p>
+                    <p className='contact-texts'>{t("contact5")}</p>
                           <a href="tel : +998936689974" className="contact-to">+998936689974</a>
                     </li>
                 </ul>
             </div>
             <div className="contact-bottom">
-                <h3 className="contact-title">Правообладателям</h3>
-                <p className="contact-subtext">По вопросам, возникшим в связи с предположительным неправомерным использованием товарных знаков, логотипов и иных материалов, просим обращаться по е-мейлу с приложением подтверждающих документов</p>
+                <h3 className="contact-title">{t("contact6")}</h3>
+                <p className="contact-subtext">{t("contact6")}</p>
                 <div className="contact-footer">
-                    <p>Электронная почта</p>
+                    <p>{t("contact4")}</p>
                     <a href="mailtosunnattoxtaqulov4444@gmail.com" className="contact-to">sunnattoxtaqulov4444@gmail.com</a>
                 </div>
             </div>

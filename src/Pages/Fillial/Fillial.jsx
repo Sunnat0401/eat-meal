@@ -16,7 +16,7 @@ const Fillial = ({changeLang}) => {
 <div className="navbar">
         <div className="container">
             <div className="hamburger">
-            <TemporaryDrawer/>
+            <TemporaryDrawer changeLang={changeLang}/>
             </div>
             <ul className="navbar-left">
                 <li className="navbar-item logo">
@@ -54,10 +54,10 @@ const Fillial = ({changeLang}) => {
                         <a href="#link" className="fillial-link">
                             <div className="fillial-left">
                                 <h3 className="fillial-title">MaxWay Magic City</h3>
-                                <p className="fillial-text">Magic City,ул. Бабура, 174, Ташкент, Узбекистан</p>
+                                <p className="fillial-text">Magic City,ул. babura, 174, Toshkent, O'zbekiston</p>
                             </div>
                             <div className="fillial-right">
-                                <p className="fillial-info">Часы работы</p>
+                                <p className="fillial-info">{t("fillial1")}</p>
                                 <p className="fillial-clock">10:00-03:00</p>
                             </div>
                         </a>
@@ -66,10 +66,10 @@ const Fillial = ({changeLang}) => {
                         <a href="#link" className="fillial-link">
                             <div className="fillial-left">
                                 <h3 className="fillial-title">MaxWay Tashlent City</h3>
-                                <p className="fillial-text">Magic City,ул. Navoiy , 26, Ташкент, Узбекистан</p>
+                                <p className="fillial-text">Magic City, st Navoiy , 26 Toshkent, O'zbekiston</p>
                             </div>
                             <div className="fillial-right">
-                                <p className="fillial-info">Часы работы</p>
+                                <p className="fillial-info">{t("fillial1")}</p>
                                 <p className="fillial-clock">10:00-03:00</p>
                             </div>
                         </a>
@@ -77,11 +77,11 @@ const Fillial = ({changeLang}) => {
                     <li className="fillial-list">
                         <a href="#link" className="fillial-link">
                             <div className="fillial-left">
-                                <h3 className="fillial-title">MaxWay Chilanzar City</h3>
-                                <p className="fillial-text">Magic City,ул. Chilanzar, 3, Ташкент, Узбекистан</p>
+                                <h3 className="fillial-title">MaxWay Chilonzor City</h3>
+                                <p className="fillial-text">Magic City,st. Chilonzor, 3, Toshkent, O'zbekiston</p>
                             </div>
                             <div className="fillial-right">
-                                <p className="fillial-info">Часы работы</p>
+                                <p className="fillial-info">{t("fillial1")}</p>
                                 <p className="fillial-clock">10:00-03:00</p>
                             </div>
                         </a>

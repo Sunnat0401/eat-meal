@@ -34,7 +34,7 @@ const HomePages = ({changeLang}) => {
 <div className="navbar">
         <div className="container">
             <div className="hamburger">
-            <TemporaryDrawer/>
+            <TemporaryDrawer changeLang={{changeLang}}/>
             </div>
             <ul className="navbar-left">
                 <li className="navbar-item logo">

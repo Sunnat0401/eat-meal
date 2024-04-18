@@ -62,7 +62,7 @@ const App = () => {
         <Route path="/donar" element={<Donar changeLang={changeLang}/>}/>
         <Route path="/xot-dog" element={<XotDog changeLang={changeLang}/>}/>
         <Route path="/free" element={<Free/>} changeLang={changeLang}/>
-        <Route path="/drink" element={<Drink changeLang={changeLang}/>}/>
+        <Route path="/drink" element={<Drink  changeLang={changeLang}/>}/>
         <Route path="/salad" element={<Salad changeLang={changeLang}/>}/>
         <Route path="/bread" element={<Bread changeLang={changeLang}/>}/>
         <Route path="/sauce" element={<Sauce changeLang={changeLang}/>}/>
