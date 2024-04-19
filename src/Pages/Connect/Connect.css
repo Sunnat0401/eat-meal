@@ -63,7 +63,7 @@
 
      .connect-title{
       font-weight: bold;
-      padding :35px 0;
+      padding :40px 0 20px;
      }
      .connect-wrapper{
          height: 280px;
@@ -75,6 +75,12 @@
      .connect-link{
 font-size: 20px;   
      }
+}
+@media screen and (max-width:347px){
+    .connect-title{
+        margin: 40px 0 5px;
+        font-size: 22px;
+       }
 }
 @media screen and (max-width:367px){
     .connect-title{
