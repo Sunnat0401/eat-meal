@@ -16,6 +16,7 @@ import {Link} from 'react-router-dom'
 import Footer from '../../Components/Footer/Footer'
 import { useTranslation } from 'react-i18next'
 import TemporaryDrawer from '../Hamburger/Hamburger'
+import MyCarousel from '../../Components/Carousel/Carousel'
 
 const Pizza = ({changeLang}) => {
   const changeLangHandler = (e) =>{
@@ -61,39 +62,8 @@ const Pizza = ({changeLang}) => {
 </div> 
 
      {/* Carusel */}
-     <div id="carouselExample" className="carousel slide">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src={corusel1} className="d-block w-100" alt="img" />
-    </div>
-    <div className="carousel-item">
-      <img src={corusel2} className="d-block w-100" alt="img" />
-    </div>
-    <div className="carousel-item">
-      <img src={corusel3} className="d-block w-100" alt="img" />
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
+     <MyCarousel/>
 {/* Carusell */}
-
-   {/* Cards */}
-      <div className="card">
-        <div className="container">
-          <img className='card-imgs' src={corusel1} alt="text" />
-          <img className='card-imgs' src={corusel2} alt="text" />
-          <img className='card-imgs' src={corusel3} alt="text" />
-          <img className='card-imgs' src={cardImg} alt="text" />
-        </div>
-      </div>
-      {/* Cards */}
 
       {/* Menu */}
       <div className="menu">
