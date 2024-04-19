@@ -37,17 +37,6 @@ const HomePages = ({changeLang}) => {
 <MyCarousel/>
 {/* Carusell */}
 
-   {/* Cards */}
-      <div className="card">
-        <div className="container">
-          <img className='card-imgs' src={corusel1} alt="text" />
-          <img className='card-imgs' src={corusel2} alt="text" />
-          <img className='card-imgs' src={corusel3} alt="text" />
-          <img className='card-imgs' src={cardImg} alt="text" />
-        </div>
-      </div>
-      {/* Cards */}
-
       {/* Menu */}
       <div className="menu">
         <div className="wrapper">

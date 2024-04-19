@@ -149,7 +149,7 @@ const XotDog = ({changeLang}) => {
       </div>
       <div className="foods-lists">
              <img src={xtd3} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Salted Pasta with mushroom sauce</h4>
+             <h4 className="foods-title">King Dog</h4>
              <p className='foods-text'>Hot-dog bulochkasi, Kanada sosiskasi, tuzlangan bodring...</p>
              <div className="foods-info">
               <span className="foods-sum">20 000 so'm </span>
@@ -158,7 +158,7 @@ const XotDog = ({changeLang}) => {
       </div>
       <div className="foods-lists">
              <img src={xtd4} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Beef dumpling in hot soup</h4>
+             <h4 className="foods-title">King Dog</h4>
              <p className='foods-text'>Hot-dog bulochkasi, Kanada sosiskasi, tuzlangan bodring...</p>
              <div className="foods-info">
               <span className="foods-sum">15 000 so'm </span>
@@ -167,7 +167,7 @@ const XotDog = ({changeLang}) => {
       </div>
       <div className="foods-lists">
              <img src={xtd5} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Hot spicy fried rice with omelet</h4>
+             <h4 className="foods-title">King Dog</h4>
              <p className='foods-text'>Hot-dog bulochkasi, Kanada sosiskasi, tuzlangan bodring...</p>
              <div className="foods-info">
               <span className="foods-sum">15 000 so'm </span>
@@ -176,7 +176,7 @@ const XotDog = ({changeLang}) => {
       </div>
       <div className="foods-lists">
              <img src={xotdog6} alt="foods" className="foods-img" />
-             <h4 className="foods-title">Spicy instant noodle with</h4>
+             <h4 className="foods-title">King Dog</h4>
              <p className='foods-text'>Hot-dog bulochkasi, Kanada sosiskasi, tuzlangan bodring...</p>
              <div className="foods-info">
               <span className="foods-sum">7.56 сум</span>
@@ -185,7 +185,7 @@ const XotDog = ({changeLang}) => {
       </div>
       <div className="foods-lists">
              <img src={xotdog7} alt="foods" className="foods-img" />
-             <h4 className="foods-title">constant noodle special omelette</h4>
+             <h4 className="foods-title">King Dog</h4>
              <p className='foods-text'>Hot-dog bulochkasi, Kanada sosiskasi, tuzlangan bodring...</p>
              <div className="foods-info">
               <span className="foods-sum">9.21 сум</span>
@@ -194,7 +194,7 @@ const XotDog = ({changeLang}) => {
       </div>
       <div className="foods-lists">
              <img src={xotdog8} alt="foods" className="foods-img" />
-             <h4 className="foods-title">noodle with spinach</h4>
+             <h4 className="foods-title">King Dog</h4>
              <p className='foods-text'>Hot-dog bulochkasi, Kanada sosiskasi, tuzlangan bodring...</p>
              <div className="foods-info">
               <span className="foods-sum">6.43 сум</span>
